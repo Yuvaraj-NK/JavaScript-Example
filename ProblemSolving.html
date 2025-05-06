@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<body>
+    
+
+    <p id="output">Large Number: </p>
+
+    <p > multiples 3 Numbers : <span id="multiples3"> </span>  </p>
+
+    <p >Print characters: <span id="Print_characters"> </span>  </p>
+
+    
+
+
+
+<script>
+
+
+//****************** Problem Solving
+
+// ------1 -------
+
+// 1. You are given a number **A** in *Kilometers*. Convert this into **B**: *Meters* and **C**: *Centi-Metres*.
+    
+//     **Input Description:**
+    
+//     A number "A" representing some distance in kilometer is provided to you as the input.
+    
+//     **Output Description:**
+    
+//     Convert and print this value in meters and centimeters.
+    
+//     **`Sample Input :**2`
+    
+//     **`Sample Output :`**
+    
+//     `2000`
+    
+//     `200000`
+
+const convert = (km) => {
+
+  let meters = km * 1000;
+  let centimeters = km * 100000;
+
+  console.log("Km --- ", km);
+  console.log("meters --- ", meters);
+  console.log("centimeters --- ", centimeters);
+
+}
+    
+convert(5);
+
+
+
+// ****** 2 -----
+
+// 2. You are given three numbers **A**, **B** & **C**. Print the largest amongst these three numbers.
+    
+//     **Input Description:**
+    
+//     Three numbers are provided to you.
+    
+//     **Output Description:**
+    
+//     Find and print the largest among the three
+    
+//     **`Sample Input :**1,2,3`
+    
+//     **`Sample Output :**3`
+
+
+
+let input = "1,2,3";
+  let [A, B, C] = input.split(',').map(Number);
+  let largest = Math.max(A, B, C);
+  console.log(largest);
+
+  // Display in the <p> tag
+  document.getElementById("output").textContent = "Large Number: " + largest;
+
+
+
+
+  
+// ********* 3. ------------
+        
+//         QA 3 ----- Print the First 3 multiples of the given number "**N**". (**N** is a positive integer)
+        
+//         Note: print the characters with a single space between them.
+        
+//         **Input Description:**
+        
+//         A positive integer is provided to you as an input.
+        
+//         **Output Description:**
+        
+//         Print the First 3 multiples of the number with single spaces between them as an output.
+        
+//         **`Sample Input :**2`
+        
+//         **`Sample Output :**2 4 6` 
+    
+            let N = 2;
+            let result = "";
+
+            for (let i = 1; i <= 3; i++) {
+            result += (i * N) + (i < 3 ? " " : ""); // Add space after each except the last
+            }
+
+            console.log(result); 
+
+
+        // Display the output
+        document.getElementById("multiples3").textContent = result;
+    
+//**** 4 -----------
+
+// 4. Write a code to get the input in the given format and print the output in the given format.
+    
+//     **Input Description:**
+    
+//     A single line contains a string.
+    
+//     **Output Description:**
+    
+//     Print the characters in a string separated by comma.
+    
+//     **`Sample Input :sathishkumar`**
+    
+//     **`Sample Output :s**,a,t,h,i,s,h,k,u,m,a,r`
+
+
+
+
+  let userinput = "sathishkumar";
+  let output = userinput.split('').join(',');
+  document.getElementById("Print_characters").textContent = output;    
+
+
+
+
+  //***** 5 ----
+
+
+//   5. Write a code to get the input in the given format and print the output in the given format.
+    
+//     **Input Description:**
+    
+//     A single line contains a string.
+    
+//     **Output Description:**
+    
+//     Print the characters in a string separated by line.
+    
+//     **`Sample Input :sathishkumar`**
+    
+//     **`Sample Output :`**
+    
+//     **`s`**
+    
+//     `a`
+    
+//     `t`
+    
+//     `h`
+    
+//     `i`
+    
+//     `s`
+    
+//     `h`
+    
+//     `k`
+    
+//     `u`
+    
+//     `m`
+    
+//     `a`
+    
+//     `r`
+
+
+  let input5 = "sathishkumar";
+
+for (let i = 0; i < input5.length; i++) {
+  console.log(input5[i]);
+}
+
+
+
+
+    </script>
+
+</body>
+</html>

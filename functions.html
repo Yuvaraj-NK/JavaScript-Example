@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+
+
+
+    <script>
+
+
+        // Type 1 ----------------------
+        function addition(a, b) {
+            let c = a + b;
+            return c;
+
+        }
+
+        function subtraction(a, b) {
+            let c = a - b;
+            return c;
+        }
+
+        function multiplication(a, b) {
+            let c = a * b;
+            return c;
+        }
+
+        function division(a, b) {
+            let c = a / b;
+            return c;
+        }
+
+        // Type 2 Arrow Funtion single line ----------------------
+
+        const addition1 = (a, b) => a + b;
+        const subtraction1 = (a, b) => a - b;
+        const multiplication1 = (a, b) => a * b;
+        const division1 = (a, b) => a / b;
+
+
+
+        // Type 3 Arrow Funtion  ----------------------
+
+        const addition2 = (a, b) => {
+            let c = a + b;
+            return c;
+        }
+
+        const subtraction2 = (a, b) => {
+            let c = a - b;
+            return c;
+        }
+
+        const multiplication2 = (a, b) => {
+            let c = a * b;
+            return c;
+        }
+
+        const division2 = (a, b) => {
+            let c = a / b;
+            return c;
+        }
+
+
+
+        // Type 3  - Immediately Invoked Function Expression (IIFE)
+
+
+        // (function(a,b){ return a+b} )(10,100);
+
+
+
+        const Result_Addition = addition(10, 40);
+        const Result_subtraction = subtraction(10, 40);
+        const Result_multiplication = multiplication(10, 40);
+        const Result_division = division(10, 40);
+
+        const Result_Addition_1 = addition1(10, 40);
+        const Result_subtraction_1 = subtraction1(10, 40);
+        const Result_multiplication_1 = multiplication1(10, 40);
+        const Result_division_1 = division1(10, 40);
+
+
+        const Result_Addition_2 = addition2(10, 40);
+        const Result_subtraction_2 = subtraction2(10, 40);
+        const Result_multiplication_2 = multiplication2(10, 40);
+        const Result_division_2 = division2(10, 40);
+
+
+        // const Result_Addition_3= addition3(10, 40);
+        // const Result_subtraction_3= subtraction3(10, 40);
+        // const Result_multiplication_3= multiplication3(10, 40);
+        // const Result_division_3= division3(10, 40);
+
+
+        console.log(" addition  --- ", Result_Addition);
+        console.log(" subtraction  --- ", Result_subtraction);
+        console.log(" multiplication  --- ", Result_multiplication);
+        console.log(" division  --- ", Result_division);
+
+
+        console.log(" addition 1  --- ", Result_Addition_1);
+        console.log(" subtraction  1 --- ", Result_subtraction_1);
+        console.log(" multiplication 1 --- ", Result_multiplication_1);
+        console.log(" division  1 --- ", Result_division_1);
+
+
+        console.log(" addition  2 --- ", Result_Addition_2);
+        console.log(" subtraction 2  --- ", Result_subtraction_2);
+        console.log(" multiplication 2  --- ", Result_multiplication_2);
+        console.log(" division  2 --- ", Result_division_2);
+
+
+
+
+        const convert = (km) => {
+
+            let meters = km * 1000;
+            let centimeters = km * 100000;
+
+            console.log("Km --- ", km);
+            console.log("meters --- ", meters);
+            console.log("centimeters --- ", centimeters);
+
+        }
+
+        convert(5);
+
+    </script>
+
+</body>
+
+</html>
