@@ -9,7 +9,7 @@
 
     <p >Print characters: <span id="Print_characters"> </span>  </p>
 
-    
+    <h1 id="gradeResult"> </h1>
 
 
 
@@ -201,7 +201,31 @@ function checkVotingEligibility(age) {
 checkVotingEligibility(20); 
 checkVotingEligibility(16); 
 
+    //* -------- Grade System ----------------
+
+function calculateGrade(tami,english,science,accounts,computer) {
     
+          const total = tamil + english + science + accounts + computer;
+      const average = total / 5;
+
+      let grade = "";
+      if (average >= 90) {
+        grade = "A+";
+      } else if (average >= 80) {
+        grade = "A";
+      } else if (average >= 70) {
+        grade = "B";
+      } else if (average >= 60) {
+        grade = "C";
+      } else if (average >= 50) {
+        grade = "D";
+      } else {
+        grade = "Fail";
+      }
+
+      document.getElementById("gradeResult").innerText =
+        `Average: ${average.toFixed(2)} - Grade: ${grade}`;
+    }
 
     </script>
 
